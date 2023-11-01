@@ -19,21 +19,21 @@ header .menu {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1;
   background-color: #212529;
   padding: 24px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 header .menu .logo {
-  width: 11%;
+  width: 10%;
 }
 header .menu nav {
   text-align: center;
 }
 header .menu nav a {
-  padding: 0 20px;
+  padding: 0 15px;
   letter-spacing: 2px;
 }
 header .box {
