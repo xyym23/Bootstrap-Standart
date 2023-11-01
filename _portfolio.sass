@@ -1,0 +1,90 @@
+#portfolio
+    background-color: #F8F9FA
+    .col-md-4
+        margin: 0 0 24px 0
+    .textbox
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            margin: 0 0 16px 0
+            font-size: 46px
+            font-weight: 700
+            text-align: center
+        h3
+            margin: 0 0 64px 0
+            color: #6c757d
+            font-weight: 500
+            font-size: 16px
+            font-style: italic
+    .box
+        position: relative
+        padding: 0 0 20px 0
+        width: 100%
+        height: 100%
+        background-color: #ffff
+        .textboxtwo
+            position: relative
+            z-index: 2
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            flex-direction: column
+            h2
+                font-weight: 600
+                padding: 20px 0 10px
+                font-size: 30px
+                text-align: center
+            h4
+                line-height: 1.5
+                text-align: center
+                color: #6c757d
+                font-size: 16px
+        .imgbox
+            position: relative
+        .yellow-object 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #ffc800
+            opacity: 0
+            z-index: 1
+            transition: opacity 0.3s ease
+        .imgbox:hover .yellow-object 
+            opacity: 0.8
+        .icon 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 3
+            font-size: 56px
+            color: white
+            opacity: 0
+            transition: opacity 0.3s ease
+        .imgbox:hover .icon 
+            opacity: 1
+        .yellow-object:hover 
+            cursor: pointer
+        i:hover 
+            cursor: pointer
+    @media (max-width: 1000px)
+        .textbox
+            h1
+                font-size: 38px
+        .col-md-4 
+            width: 50%
+            display: flex
+            flex-direction: column
+            align-items: center
+        .box
+            width: 100%
+            height: 100%
+    @media (max-width: 750px)
+        .col-md-4 
+            width: 100%
+        .box
+            width: 60%
+            height: 60%
