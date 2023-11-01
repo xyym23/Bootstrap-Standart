@@ -9,4 +9,24 @@ img {
 
 header {
   background-color: #212529;
+}
+header .menu {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu .logo {
+  width: 11%;
+}
+header .menu nav {
+  text-align: center;
+}
+header .menu nav a {
+  padding: 0 20px;
+  letter-spacing: 2px;
+}
+
+#welcome {
+  background-image: url("./assets/welcome.jpg");
 }/*# sourceMappingURL=style.css.map */
