@@ -1,6 +1,7 @@
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
+  background-color: gray;
 }
 
 img {
@@ -8,9 +9,18 @@ img {
 }
 
 header {
-  background-color: #212529;
+  background-image: url("assets/welcome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 header .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #212529;
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
@@ -26,7 +36,35 @@ header .menu nav a {
   padding: 0 20px;
   letter-spacing: 2px;
 }
-
-#welcome {
-  background-image: url("./assets/welcome.jpg");
+header .box {
+  padding: 17rem 0 12rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .box .textbox {
+  text-align: center;
+  color: #ffffff;
+}
+header .box .textbox h1 {
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+}
+header .box .textbox h2 {
+  font-size: 72px;
+  margin-bottom: 64px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+header .box .btn {
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #ffc800;
+}
+header .box .btn h4 {
+  font-weight: 700;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
